@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+/* Видео фон и его поверхнсоть */
+
+
+
+
+
+.video{
+    position: relative;
+    padding-bottom: 56.25%;
+    z-index: 1;
+}
+.video_media{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.intro{
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.intro:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.intro_content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    
+}
+
+.intro_titile{
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    font-size: 67px;
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
+
+}
+.intro_titile_2{
+    color:#fff;
+    margin: 0;
+    text-align: center;
+    font-size: 37px;
+    font-family: sans-serif;
+}
+.intro_titile3{
+  color:#fff;
+  margin: 0;
+  text-align: center;
+  font-size: 27px;
+  font-family: sans-serif;
+}
+
+.form_regist{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.login{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.email{
+  width: 300px;
+  height: 40px;
+  display: flex;
+ 
+  text-align: center;
+  color: white;
+  background-color: #0000006b;
+  border: 1px solid rgb(255, 255, 255);
+  
+}
+
+.btn{
+  height: 40px;
+  width: 100px;
+
+  text-align: center;
+  color: white;
+  background-color: #0000006b;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+
+/* Меню Габмургер */
+
+
+
+
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    transition: 0.3s;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transition: 0.3s;
+    background-color: #ffffff;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  /* контейнер меню */
+.menu__box {
+    display: block;
+    position: fixed;
+    transition: 0.3s;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #262626;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .menu__item:hover {
+    transition: 0.3s;
+    background-color: #000;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+    transition: 0.3s;
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+    transition: 0.3s;
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    transition: 0.3s;
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    transition: 0.3s;
+    left: 0;
+  }
+
+  .hamburger-menu{
+    position: fixed;
+  }
+
+  /* часть 2 */
+.chapter2{
+    background-color: #262626;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+/* img */
+.img_progpamm{
+  display: flex;
+  justify-content: space-around;
+   
+    
+}
+.img1{
+    width: 150px;
+    height: auto;
+    /* justify-content: space-around;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    display: flex; */
+    transition: 0.5s;
+    
+}
+.img1:hover{
+  transform: scale(1.2);
+  transition: 0.5s;
+  
+}
+
+
+.chp2_zag1{
+  font-size: 70px;
+}
+.chp2_zag2{
+  font-size: 25px;
+}
+
+.chapter3_html{
+  background-color: #262626;
+  font-family: sans-serif;
+  color: white;
+}
+.html{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* text-align: left; */
+  font-size: 40px;
+}
+.html{
+width: 1300px;
+height: 630px;
+margin: 0 auto;
+background-color: #d3d3d3;
+border-radius: 30px;
+}
+
+.chapter3_css{
+  background-color: #262626;
+}
